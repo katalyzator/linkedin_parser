@@ -1,0 +1,4 @@
+import os
+
+LINKEDIN_EMAIL = os.environ['LINKEDIN_EMAIL']
+LINKEDIN_PASSWORD = os.environ['LINKEDIN_PASSWORD']
