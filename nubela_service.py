@@ -2,7 +2,7 @@ import requests
 
 
 class NubelaService:
-    API_KEY = 'e2565859-ef37-4e54-9e69-5b21ce7730bd'
+    API_KEY = 'be76e98d-f95d-482c-ba64-66d1a50e2f7a'
 
     @classmethod
     def _fetch(cls, url: str, params: dict = None) -> dict:
@@ -67,13 +67,13 @@ class NubelaService:
 
 
 if __name__ == '__main__':
-    company_id = 'enviropack-ltd'
-    # company_profile = NubelaService.get_company_profile(company_id=company_id)
-    # print(company_profile)
+    company_id = 'inhersight'
+    company_profile = NubelaService.get_company_profile(company_id=company_id)
+    print(company_profile)
 
     # company_employees = NubelaService.get_company_employees(company_id=company_id)
     # print(company_employees)
 
-    person_id = 'aibek-raiymbekov'
-    person_profile = NubelaService.get_person_profile(person_id=person_id)
-    print(person_profile)
+    # person_id = 'aibek-raiymbekov'
+    # person_profile = NubelaService.get_person_profile(person_id=person_id)
+    # print(person_profile)
